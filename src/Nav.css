@@ -1,0 +1,6 @@
+.stickyNav {
+    position: fixed;
+    width: 101vw;
+    top: 0;
+    color: white;
+}

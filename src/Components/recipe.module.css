@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+.recipe {
+    font-family: 'Montserrat Alternates', sans-serif;
+    border-radius: 5px;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 7% 250px auto 5%;
+    grid-template-areas: "title" "image" "ingredients" "calorie";
+    padding: 20px 0 0 10px;
+    margin-bottom: 15px;
+}
+
+.image {
+    margin: 0 auto 50px auto;
+    grid-area: image;
+    border-radius: 50%;
+    padding: 10px 0px 0px 10px ;
+    width: 200px;
+    height: 200px;
+}
+
+.calorie {
+    grid-area: calorie;
+}
+
+span {
+    font-weight: bold;
+}
+
+.title {
+    grid-area: title;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 75px;
+    font-weight: bolder;
+}
+
+.ingredients {
+    grid-area: ingredients;
+    overflow: none;
+    max-width: 80%;
+}
+
+.ingredientsTitle {
+    font-size: large;
+    font-weight: 700;
+}
+
+@media (min-width: 650px) {
+    .recipe {
+        max-width: 45%;
+        display: grid;
+        grid-template-columns: auto 70%;
+        grid-template-rows: 10% 85% 5%;
+        grid-template-areas: "title title" "image ingredients" "calorie ingredients";
+        margin: 15px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,70 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  height: 100vh;
+}
+
+.main {
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #005dff;
+  clip-path: polygon(100% 0, 99% 50%, 49% 100%, 0 100%, 0 0);
+  position: fixed;
+  z-index: -1;
+}
+
+@media (min-width: 650px) {
+  .main {
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
+  }
+  .search-form {
+    margin: 100px auto 10px auto;
+    padding: 0 auto;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-bar {
+    width: 50%;
+    border: none;
+    padding: 10px;
+  }
+  .search-button {
+    background-color: lightcoral;
+    border: none;
+    padding: 10px 20px;
+  }
+}
+
+.search-form {
+  margin: 100px auto 10px auto;
+  padding: 0 auto;
+  min-height: 10vh;
+  display: flex;
+  min-width: 90vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  width: 70%;
+  border: none;
+  padding: 10px 0px 10px 10px;
+}
+
+.search-button {
+  background-color: lightcoral;
+  border: none;
+  padding: 10px 10px;
+}
+
+.recipes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
